@@ -30,8 +30,8 @@ public class Ejercicio1 {
 		
 		System.out.println(linea);
 
-		System.out.printf("%-5s", "x= " + x + " y= " + y);
-		System.out.printf("%15s %8s %11s %15s%n" , suma, resta, producto, divi);
+		System.out.printf("%-5s", "x = " + x + " y = " + y);
+		System.out.printf("%13s %7s %11s %17s%n" , suma, resta, producto, divi);
 		System.out.println(linea);
 
 		
