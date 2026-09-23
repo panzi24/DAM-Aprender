@@ -47,6 +47,12 @@ public class EjercicioEspecial3 {
 		int minutoEstimadaCincoKM = minutoInicio + minutoExtraCincoKM;
 		int segundoEstimadaCincoKM = segundoInicio + segundoTotalCincoKM;
 		
+		String textoPasoCincoKM = "paso por 5K";
+		String textoEstimadoCincoKM = "Hora estimada: " + horaEstimadaCincoKM + ":" + minutoEstimadaCincoKM + ":" + segundoEstimadaCincoKM;
+		String textoParcialCincoKM = "tiempo parcial: " + horaExtraCincoKM + ":" + minutoExtraCincoKM + ":" + segundoTotalCincoKM;
+		
+		
+		
 		
 		//10km
 		int distanciaDiezKM = 10;
@@ -63,6 +69,12 @@ public class EjercicioEspecial3 {
 		int horaEstimadaDiezKM = horaInicio + horaExtraDiezKM;
 		int minutoEstimadaDiezKM = minutoInicio + minutoExtraDiezKM;
 		int segundoEstimadaDiezKM = segundoInicio + segundoTotalDiezKM;
+		
+		String textoPasoDiezKM = "paso por 10K";
+		String textoEstimadoDiezKM = "Hora estimada: " + horaEstimadaDiezKM + ":" + minutoEstimadaDiezKM + ":" + segundoEstimadaDiezKM;
+		String textoParcialDiezKM = "tiempo parcial: " + horaExtraDiezKM + ":" + minutoExtraDiezKM + ":" + segundoTotalDiezKM;
+		
+
 
 		
 		//15km
@@ -81,6 +93,12 @@ public class EjercicioEspecial3 {
 		int minutoEstimadaQuinceKM = minutoInicio + minutoExtraQuinceKM;
 		int segundoEstimadaQuinceKM = segundoInicio + segundoTotalQuinceKM;
 		
+
+		String textoPasoQuinceKM = "paso por 15K";
+		String textoEstimadoQuinceKM = "Hora estimada: " + horaEstimadaQuinceKM + ":" + minutoEstimadaQuinceKM + ":" + segundoEstimadaQuinceKM;
+		String textoParcialQuinceKM = "tiempo parcial: " + horaExtraQuinceKM + ":" + minutoExtraQuinceKM + ":" + segundoTotalQuinceKM;
+		
+
 		
 		//20km
 		int distanciaVeinteKM = 20;
@@ -98,7 +116,10 @@ public class EjercicioEspecial3 {
 		int minutoEstimadaVeinteKM = minutoInicio + minutoExtraVeinteKM;
 		int segundoEstimadaVeinteKM = segundoInicio + segundoTotalVeinteKM;
 		
-		
+		String textoPasoVeinteKM = "paso por 20K";
+		String textoEstimadoVeinteKM = "Hora estimada: " + horaEstimadaVeinteKM + ":" + minutoEstimadaVeinteKM + ":" + segundoEstimadaVeinteKM;
+		String textoParcialVeinteKM = "tiempo parcial: " + horaExtraVeinteKM + ":" + minutoExtraVeinteKM + ":" + segundoTotalVeinteKM;
+	
 		
 		
 		//25km
@@ -117,6 +138,12 @@ public class EjercicioEspecial3 {
 		int minutoEstimadaVCKM = minutoInicio + minutoExtraVCKM;
 		int segundoEstimadaVCKM = segundoInicio + segundoTotalVCKM;
 		
+				
+		String textoPasoVCKM = "paso por 25K";
+		String textoEstimadoVCKM = "Hora estimada: " + horaEstimadaVCKM + ":" + minutoEstimadaVCKM + ":" + segundoEstimadaVCKM;
+		String textoParcialVCKM = "tiempo parcial: " + horaExtraVCKM + ":" + minutoExtraVCKM + ":" + segundoTotalVCKM;
+	
+		
 		//30km
 		int distanciaTreintaKM = 30;
 				
@@ -133,6 +160,29 @@ public class EjercicioEspecial3 {
 		int minutoEstimadaTreintaKM = minutoInicio + minutoExtraTreintaKM;
 		int segundoEstimadaTreintaKM = segundoInicio + segundoTotalTreintaKM;
 		
+		String textoPasoTreintaKM = "paso por 30K";
+		String textoEstimadoTreintaKM = "Hora estimada: " + horaEstimadaTreintaKM + ":" + minutoEstimadaTreintaKM + ":" + segundoEstimadaTreintaKM;
+		String textoParcialTreintaKM = "tiempo parcial: " + horaExtraTreintaKM + ":" + minutoExtraTreintaKM + ":" + segundoTotalTreintaKM;
+		
+		
+		//OUT
+		
+		System.out.println(linea);
+		System.out.println("IES FAUSTÍ BARBERÀ ATHLETICS 30K");
+		System.out.println(linea);
+		System.out.println("This program show the expected times and estimated every 5K");
+		System.out.println(linea);
+		
+		System.out.printf("%-15s %-25s %20s%n", textoPasoCincoKM, textoEstimadoCincoKM, textoParcialCincoKM);
+		System.out.printf("%-15s %-25s %20s%n", textoPasoDiezKM, textoEstimadoDiezKM, textoParcialDiezKM);
+		System.out.printf("%-15s %-25s %20s%n", textoPasoQuinceKM, textoEstimadoQuinceKM, textoParcialQuinceKM);
+		System.out.printf("%-15s %-25s %20s%n", textoPasoVeinteKM, textoEstimadoVeinteKM, textoParcialVeinteKM);
+		System.out.printf("%-15s %-25s %20s%n", textoPasoVCKM, textoEstimadoVCKM, textoParcialVCKM);
+		System.out.printf("%-15s %-25s %20s", textoPasoTreintaKM, textoEstimadoTreintaKM, textoParcialTreintaKM);
+		
+
+
+
 		
 		
 		
@@ -145,8 +195,6 @@ public class EjercicioEspecial3 {
 		
 		
 		
-		
-		System.out.println("la velocidad es: " + minutoTotalCincoKM + " Minutos: " +segundoTotalCincoKM);
 		
 
 		
