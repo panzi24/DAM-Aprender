@@ -151,7 +151,7 @@ public class EjercicioEspecial2 {
 		int segundoEstimadaMesosfera = segundoInicioMesosfera + segundoAcumuladoMesosfera;
 		
 		
-		int horaEstimadaMesosferaferaScanner = horaInicio + horasExtraAcumuladoMesosfera;
+		int horaEstimadaMesosferaScanner = horaInicio + horasExtraAcumuladoMesosfera;
 		int minutoEstimadaMesosferaScanner = minutoInicio + minutoExtraAcumuladoMesosfera;
 		int segundoEstimadaMesosferaScanner = segundoInicio + segundoMesosfera;
 
@@ -167,7 +167,7 @@ public class EjercicioEspecial2 {
 		int minutoAcumuladoTermosfera = tiempoAcumuladoTermosfera / 60;
 		int segundoAcumuladoTermosfera = tiempoAcumuladoTermosfera % 60;
 		
-		textoTiempoParcialEspacioLuna
+		
 		int minutoTermosfera = tiempoTermosfera / 60;
 		int segundoTermosfera = tiempoTermosfera % 60;
 		
@@ -215,8 +215,8 @@ public class EjercicioEspecial2 {
 		
 		
 		
-		int horaEstimadaExosferaScanner = horaInicio + horasExtraExosfera;
-		int minutoEstimadaExosferaScanner = minutoInicio + minutoExtraExosfera;
+		int horaEstimadaExosferaScanner = horaInicio + horasExtraAcumuladoExosfera;
+		int minutoEstimadaExosferaScanner = minutoInicio + minutoExtraAcumuladoExosfera;
 		int segundoEstimadaExosferaScanner = segundoInicio + segundoExosfera;
 		
 	
@@ -246,8 +246,8 @@ public class EjercicioEspecial2 {
 		int minutoEstimadaEspacioLuna = minutoInicioEspacioLuna + minutoExtraAcumuladoEspacioLuna;
 		int segundoEstimadaEspacioLuna = segundoInicioEspacioLuna + segundoAcumuladoEspacioLuna;
 		
-		int horaEstimadaEspacioLunaScanner = horaInicio + horasExtraEspacioLuna;
-		int minutoEstimadaEspacioLunaScanner = minutoInicio + minutoEspacioLuna;
+		int horaEstimadaEspacioLunaScanner = horaInicio + horasExtraAcumuladoEspacioLuna;
+		int minutoEstimadaEspacioLunaScanner = minutoInicio + minutoExtraAcumuladoEspacioLuna;
 		int segundoEstimadaEspacioLunaScanner = segundoInicio + segundoEspacioLuna;
 	
 		
@@ -357,7 +357,7 @@ public class EjercicioEspecial2 {
 		//Mesosfera        
 		
 		String textoMesosferaScanner = "Paso por Mesosfera";
-		String textoHoraEstimadaMesosferaScanner = "Hora estimada: " + horaEstimadaMesosfera + ":" + minutoEstimadaMesosfera + ":" + segundoEstimadaMesosfera;
+		String textoHoraEstimadaMesosferaScanner = "Hora estimada: " + horaEstimadaMesosferaScanner + ":" + minutoEstimadaMesosferaScanner + ":" + segundoEstimadaMesosferaScanner;
 		String textoTiempoParcialMesosferaScanner = "tiempo parcial: " + horasExtraMesosfera + ":" + minutoExtraMesosfera + ":" + segundoMesosfera;
 	
 		
@@ -367,7 +367,7 @@ public class EjercicioEspecial2 {
 		//Termosfera       
 		
 		String textoTermosferaScanner = "Paso por Termosfera";
-		String textoHoraEstimadaTermosferaScanner = "Hora estimada: " + horaEstimadaTermosfera + ":" + minutoEstimadaTermosfera + ":" + segundoEstimadaTermosfera;
+		String textoHoraEstimadaTermosferaScanner = "Hora estimada: " + horaEstimadaTermosferaScanner + ":" + minutoEstimadaTermosferaScanner + ":" + segundoEstimadaTermosferaScanner;
 		String textoTiempoParcialTermosferaScanner = "tiempo parcial: " + horasExtraTermosfera + ":" + minutoExtraTermosfera+ ":" + segundoTermosfera;
 	
 		
@@ -378,7 +378,7 @@ public class EjercicioEspecial2 {
 		//Exosfera         
 		
 		String textoExosferaScanner = "Paso por Exosfera";
-		String textoHoraEstimadaExosferaScanner = "Hora estimada: " + horaEstimadaExosfera + ":" + minutoEstimadaExosfera + ":" + segundoEstimadaExosfera;
+		String textoHoraEstimadaExosferaScanner = "Hora estimada: " + horaEstimadaExosferaScanner + ":" + minutoEstimadaExosferaScanner + ":" + segundoEstimadaExosferaScanner;
 		String textoTiempoParcialExosferaScanner = "tiempo parcial: " + horasExtraExosfera + ":" + minutoExtraExosfera + ":" + segundoExosfera;
 	
 		
@@ -388,7 +388,7 @@ public class EjercicioEspecial2 {
 		//EspacioLuna             
 		
 		String textoEspacioLunaScanner = "Paso por Luna";
-		String textoHoraEstimadaEspacioLunaScanner = "Hora estimada: " + horaEstimadaEspacioLuna + ":" + minutoEstimadaEspacioLuna + ":" + segundoEstimadaEspacioLuna;
+		String textoHoraEstimadaEspacioLunaScanner = "Hora estimada: " + horaEstimadaEspacioLunaScanner + ":" + minutoEstimadaEspacioLunaScanner + ":" + segundoEstimadaEspacioLunaScanner;
 		String textoTiempoParcialEspacioLunaScanner= "tiempo parcial: " + horasExtraEspacioLuna + ":" + minutoExtraEspacioLuna + ":" + segundoEspacioLuna;
 	
 		
