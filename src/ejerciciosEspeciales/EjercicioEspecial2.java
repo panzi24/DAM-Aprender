@@ -1,5 +1,6 @@
 package ejerciciosEspeciales;
 
+import java.util.Scanner;
 
 //SIMON OCHOA IBAÑEZ 22/09/26
 
@@ -9,7 +10,18 @@ public class EjercicioEspecial2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String linea = "-".repeat(70);
+		String linea = "-".repeat(75);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Dime la hora de inicio: ");
+		int horaInicio = sc.nextInt();
+		
+		System.out.println("Dime el minuto de inicio: ");
+		int minutoInicio = sc.nextInt();
+		
+		System.out.println("Dime el segundo de inicio: ");
+		int segundoInicio = sc.nextInt();
+		
 		
 		//VARIABLES POR OBJETOS
 		
@@ -54,6 +66,7 @@ public class EjercicioEspecial2 {
 		
 		
 		
+		
 		int minutoTroposfera = tiempoTroposfera / 60;
 		int segundoTroposfera = tiempoTroposfera % 60;
 		
@@ -68,6 +81,15 @@ public class EjercicioEspecial2 {
 		int minutoEstimadaTroposfera = minutoInicioTroposfera + minutoExtraAcumuladoTroposfera;
 		int segundoEstimadaTroposfera = segundoInicioTroposfera + segundoTroposfera;
 		
+
+		
+		
+		int horaEstimadaTroposferaScanner = horaInicio + horasExtraAcumuladoTroposfera;
+		int minutoEstimadaTroposferaScanner = minutoInicio + minutoExtraAcumuladoTroposfera;
+		int segundoEstimadaTroposferaScanner = segundoInicio + segundoTroposfera;
+		
+	
+
 		
 		//Estratosfera
 		
@@ -96,7 +118,9 @@ public class EjercicioEspecial2 {
 		int minutoEstimadaEstratosfera = minutoInicioEstratosfera + minutoExtraAcumuladoEstratosfera;
 		int segundoEstimadaEstratosfera = segundoInicioEstratosfera + segundoAcumuladoEstratosfera;
 		
-	
+		int horaEstimadaEstratosferaScanner = horaInicio + horasExtraAcumuladoEstratosfera;
+		int minutoEstimadaEstratosferaScanner = minutoInicio + minutoExtraAcumuladoEstratosfera;
+		int segundoEstimadaEstratosferaScanner = segundoInicio + segundoEstratosfera;
 		
 		
 		//Mesosfera
@@ -127,6 +151,11 @@ public class EjercicioEspecial2 {
 		int segundoEstimadaMesosfera = segundoInicioMesosfera + segundoAcumuladoMesosfera;
 		
 		
+		int horaEstimadaMesosferaferaScanner = horaInicio + horasExtraAcumuladoMesosfera;
+		int minutoEstimadaMesosferaScanner = minutoInicio + minutoExtraAcumuladoMesosfera;
+		int segundoEstimadaMesosferaScanner = segundoInicio + segundoMesosfera;
+
+		
 		//Termosfera
 		
 		int horaInicioTermosfera = 10;
@@ -138,13 +167,13 @@ public class EjercicioEspecial2 {
 		int minutoAcumuladoTermosfera = tiempoAcumuladoTermosfera / 60;
 		int segundoAcumuladoTermosfera = tiempoAcumuladoTermosfera % 60;
 		
-		
+		textoTiempoParcialEspacioLuna
 		int minutoTermosfera = tiempoTermosfera / 60;
 		int segundoTermosfera = tiempoTermosfera % 60;
 		
 		int horasExtraTermosfera = minutoTermosfera / 60;
 		int minutoExtraTermosfera = minutoTermosfera % 60;
-		
+
 		int horasExtraAcumuladoTermosfera = minutoAcumuladoTermosfera / 60;
 		int minutoExtraAcumuladoTermosfera = minutoAcumuladoTermosfera % 60;
 		
@@ -154,6 +183,9 @@ public class EjercicioEspecial2 {
 		int segundoEstimadaTermosfera = segundoInicioTermosfera + segundoAcumuladoTermosfera;
 		
 		
+		int horaEstimadaTermosferaScanner = horaInicio + horasExtraAcumuladoTermosfera;
+		int minutoEstimadaTermosferaScanner = minutoInicio + minutoExtraAcumuladoTermosfera;
+		int segundoEstimadaTermosferaScanner = segundoInicio + segundoTermosfera;
 		
 		//Exosfera
 		
@@ -182,6 +214,13 @@ public class EjercicioEspecial2 {
 		int segundoEstimadaExosfera = segundoInicioExosfera + segundoAcumuladoExosfera;
 		
 		
+		
+		int horaEstimadaExosferaScanner = horaInicio + horasExtraExosfera;
+		int minutoEstimadaExosferaScanner = minutoInicio + minutoExtraExosfera;
+		int segundoEstimadaExosferaScanner = segundoInicio + segundoExosfera;
+		
+	
+		
 		//EspacioLuna
 		
 		int horaInicioEspacioLuna = 10;
@@ -207,6 +246,10 @@ public class EjercicioEspecial2 {
 		int minutoEstimadaEspacioLuna = minutoInicioEspacioLuna + minutoExtraAcumuladoEspacioLuna;
 		int segundoEstimadaEspacioLuna = segundoInicioEspacioLuna + segundoAcumuladoEspacioLuna;
 		
+		int horaEstimadaEspacioLunaScanner = horaInicio + horasExtraEspacioLuna;
+		int minutoEstimadaEspacioLunaScanner = minutoInicio + minutoEspacioLuna;
+		int segundoEstimadaEspacioLunaScanner = segundoInicio + segundoEspacioLuna;
+	
 		
 		
 		//IMPRIMIR
@@ -276,11 +319,82 @@ public class EjercicioEspecial2 {
 		String textoTiempoParcialEspacioLuna = "tiempo parcial: " + horasExtraEspacioLuna + ":" + minutoExtraEspacioLuna + ":" + segundoEspacioLuna;
 	
 		
-		System.out.printf("%-20s %25s %25s", textoEspacioLuna, textoHoraEstimadaEspacioLuna, textoTiempoParcialEspacioLuna);
+		System.out.printf("%-20s %25s %25s%n", textoEspacioLuna, textoHoraEstimadaEspacioLuna, textoTiempoParcialEspacioLuna);
 	
 	
+		
+		//SCANNER
 	
 	
+		System.out.println(linea);
+		System.out.println(linea);
+		System.out.println("DATOS DE LOS USUARIOS");
+		System.out.println(linea);
+		
+		
+		
+		//Troposfera
+		
+		String textoTroposferaScanner = "Paso por Troposfera";
+		String textoHoraEstimadaTroposferaScanner = "Hora estimada: " + horaEstimadaTroposferaScanner + ":" + minutoEstimadaTroposferaScanner + ":" + segundoEstimadaTroposferaScanner;
+		String textoTiempoParcialTroposferaScanner = "tiempo parcial: " + horasExtraTroposfera + ":" + minutoExtraTroposfera + ":" + segundoTroposfera;
+	
+		
+		System.out.printf("%-20s %25s %25s%n", textoTroposferaScanner, textoHoraEstimadaTroposferaScanner, textoTiempoParcialTroposferaScanner);
+		
+		
+		//Estratosfera    
+		
+		String textoEstratosferaScanner = "Paso por Estratosfera";
+		String textoHoraEstimadaEstratosferaScanner = "Hora estimada: " + horaEstimadaEstratosferaScanner + ":" + minutoEstimadaEstratosferaScanner + ":" + segundoEstimadaEstratosferaScanner;
+		String textoTiempoParcialEstratosferaScanner = "tiempo parcial: " + horasExtraEstratosfera + ":" + minutoExtraEstratosfera + ":" + segundoEstratosfera;
+	
+		
+		System.out.printf("%-20s %25s %25s%n", textoEstratosferaScanner, textoHoraEstimadaEstratosferaScanner, textoTiempoParcialEstratosferaScanner);
+	
+		
+		
+		//Mesosfera        
+		
+		String textoMesosferaScanner = "Paso por Mesosfera";
+		String textoHoraEstimadaMesosferaScanner = "Hora estimada: " + horaEstimadaMesosfera + ":" + minutoEstimadaMesosfera + ":" + segundoEstimadaMesosfera;
+		String textoTiempoParcialMesosferaScanner = "tiempo parcial: " + horasExtraMesosfera + ":" + minutoExtraMesosfera + ":" + segundoMesosfera;
+	
+		
+		System.out.printf("%-20s %25s %25s%n", textoMesosferaScanner, textoHoraEstimadaMesosferaScanner, textoTiempoParcialMesosferaScanner);
+			
+		
+		//Termosfera       
+		
+		String textoTermosferaScanner = "Paso por Termosfera";
+		String textoHoraEstimadaTermosferaScanner = "Hora estimada: " + horaEstimadaTermosfera + ":" + minutoEstimadaTermosfera + ":" + segundoEstimadaTermosfera;
+		String textoTiempoParcialTermosferaScanner = "tiempo parcial: " + horasExtraTermosfera + ":" + minutoExtraTermosfera+ ":" + segundoTermosfera;
+	
+		
+		System.out.printf("%-20s %25s %25s%n", textoTermosferaScanner, textoHoraEstimadaTermosferaScanner, textoTiempoParcialTermosferaScanner);
+	
+	
+		
+		//Exosfera         
+		
+		String textoExosferaScanner = "Paso por Exosfera";
+		String textoHoraEstimadaExosferaScanner = "Hora estimada: " + horaEstimadaExosfera + ":" + minutoEstimadaExosfera + ":" + segundoEstimadaExosfera;
+		String textoTiempoParcialExosferaScanner = "tiempo parcial: " + horasExtraExosfera + ":" + minutoExtraExosfera + ":" + segundoExosfera;
+	
+		
+		System.out.printf("%-20s %25s %25s%n", textoExosferaScanner, textoHoraEstimadaExosferaScanner, textoTiempoParcialExosferaScanner);
+	
+		
+		//EspacioLuna             
+		
+		String textoEspacioLunaScanner = "Paso por Luna";
+		String textoHoraEstimadaEspacioLunaScanner = "Hora estimada: " + horaEstimadaEspacioLuna + ":" + minutoEstimadaEspacioLuna + ":" + segundoEstimadaEspacioLuna;
+		String textoTiempoParcialEspacioLunaScanner= "tiempo parcial: " + horasExtraEspacioLuna + ":" + minutoExtraEspacioLuna + ":" + segundoEspacioLuna;
+	
+		
+		System.out.printf("%-20s %25s %25s%n", textoEspacioLunaScanner, textoHoraEstimadaEspacioLunaScanner, textoTiempoParcialEspacioLunaScanner);
+	
+		
 	
 	
 	}
