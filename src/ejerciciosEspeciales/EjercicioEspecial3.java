@@ -20,7 +20,7 @@ public class EjercicioEspecial3 {
 		System.out.println("Dime los minutos: ");
 		double tiempodMinutos = sc.nextDouble();
 		
-		double distanciaTotal = 30.0;
+		double distanciaTotal = 30;
 		double segundosTotales = (tiempoHoras * 3600) + (tiempodMinutos * 60);
 		double velocidad = distanciaTotal / segundosTotales;
 		
@@ -29,7 +29,7 @@ public class EjercicioEspecial3 {
 		int minutoInicio = 0;
 		int segundoInicio = 0;
 		
-		
+		/5km
 		//5km
 		double distanciaCincoKM = 5.0;
 				
@@ -56,7 +56,8 @@ public class EjercicioEspecial3 {
 		
 		//10km
 		int distanciaDiezKM = 10;
-				
+
+		
 		double tiempoDiezKM  = distanciaDiezKM  / velocidad ;
 		
 		int minutoTotalDiezKM = (int)tiempoDiezKM / 60;
