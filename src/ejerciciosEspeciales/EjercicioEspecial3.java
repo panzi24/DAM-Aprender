@@ -29,7 +29,6 @@ public class EjercicioEspecial3 {
 		int minutoInicio = 0;
 		int segundoInicio = 0;
 		
-		/5km
 		//5km
 		double distanciaCincoKM = 5.0;
 				

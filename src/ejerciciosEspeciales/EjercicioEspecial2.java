@@ -167,7 +167,7 @@ public class EjercicioEspecial2 {
 		int minutoAcumuladoTermosfera = tiempoAcumuladoTermosfera / 60;
 		int segundoAcumuladoTermosfera = tiempoAcumuladoTermosfera % 60;
 		
-		textoTiempoParcialEspacioLuna
+		
 		int minutoTermosfera = tiempoTermosfera / 60;
 		int segundoTermosfera = tiempoTermosfera % 60;
 		
