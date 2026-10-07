@@ -74,7 +74,7 @@ public class EjercicioEspecial3 {
 		String textoEstimadoDiezKM = "Hora estimada: " + horaEstimadaDiezKM + ":" + minutoEstimadaDiezKM + ":" + segundoEstimadaDiezKM;
 		String textoParcialDiezKM = "tiempo parcial: " + horaExtraDiezKM + ":" + minutoExtraDiezKM + ":" + segundoTotalDiezKM;
 		
-
+		
 
 		
 		//15km
