@@ -352,7 +352,7 @@ public class EjercicioEspecial2 {
 		
 		System.out.printf("%-20s %25s %25s%n", textoEstratosferaScanner, textoHoraEstimadaEstratosferaScanner, textoTiempoParcialEstratosferaScanner);
 	
-		
+		claculo
 		
 		//Mesosfera        
 		
