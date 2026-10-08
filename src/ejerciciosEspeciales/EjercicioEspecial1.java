@@ -1,5 +1,6 @@
 package ejerciciosEspeciales;
 
+
 //SIMON OCHOA IBAÑEZ
 
 public class EjercicioEspecial1 {
@@ -7,7 +8,6 @@ public class EjercicioEspecial1 {
 		
 		int vueltas = 20;
 		String linea = ("-").repeat(70);
-		
 		
 		int tiempoBlando = vueltas * 80;
 		int tiempoIntermedio = vueltas * 85 + tiempoBlando;

@@ -42,11 +42,12 @@ public class Ejercicio2 {
 			costoEscudoBordado = 0;
 		}
 		
+		
 		totalBandera = costoBandera + costoEscudoBordado + gastoEnvio;
 		
 		System.out.println("Gracias aqui tienes el desglose de su compra.");
 		System.out.println("Bandera de " + banderaCentimetros + " cm²: " + costoBandera);
-		System.out.println("Escudo" + costoBandera);
+		System.out.println("Escudo: " + costoEscudoBordado);
 		System.out.println("Gastos envios: " + gastoEnvio);
 		System.out.println("Total: " + totalBandera);
 
