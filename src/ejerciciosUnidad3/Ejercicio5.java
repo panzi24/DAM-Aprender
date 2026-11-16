@@ -52,23 +52,25 @@ public class Ejercicio5 {
 				
 				if (velocidadDescarga == 1) {
 					habilidadHacker = 100;
+					System.out.println("Habilidad del hacker 100%: " + habilidadHacker);
+
 				}
 				
 				if (velocidadDescarga == 2) {
 					habilidadHacker = 200;
+					habilidadHaker50 = habilidadHacker/2;
+					System.out.println("Habilidad del hacker 50%: " + habilidadHaker50);
 				}
 				
 				if (velocidadDescarga == 3) {
 					habilidadHacker = 500;
+					habilidadHaker25 = habilidadHacker/2;
+					System.out.println("Habilidad del hacker 75%: " + habilidadHaker25);
 				}
 				
-				System.out.println("Habilidad del hacker 100%: " + habilidadHacker);
 				
-				habilidadHaker50 = habilidadHacker/2;
-				System.out.println("Habilidad del hacker 50%: " + habilidadHaker50);
 				
-				habilidadHaker25 = habilidadHacker/2;
-				System.out.println("Habilidad del hacker 75%: " + habilidadHaker25);
+			
 				
 				
 				break;
@@ -97,7 +99,7 @@ public class Ejercicio5 {
 						archivosDescargados+=habilidadHacker;
 					}
 					
-					porcentajeArchivo = 100.0*archivosDescargados/kilobytesTotales;
+					porcentajeArchivo = 100.0 * archivosDescargados/kilobytesTotales;
 					System.out.println("Porcentaje descargado: " + (int)porcentajeArchivo + "%");
 					
 					if(porcentajeArchivo<50) {
